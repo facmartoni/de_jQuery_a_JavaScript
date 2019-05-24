@@ -1,6 +1,22 @@
 const key = '&apikey=14afd686';
 const url = `http://www.omdbapi.com/`;
 
+const $modal = document.getElementById('modal'); 
+const $overlay = document.getElementById('overlay'); 
+const $hideModal = document.getElementById('hideModal');
+const modalImage = $modal.querySelector('img');
+const modalTitle = $modal.querySelector('h1');
+const modalDescription = $modal.querySelector('p');
+
+const $actionContainer = document.querySelector('#action');
+const $dramaContainer = document.querySelector('#drama');
+const $animationContainer = document.querySelector('#animation');
+const $featuringContainer = document.querySelector('#featuring');
+const $formulario = document.querySelector('#form');
+const $home = document.querySelector('#home');
+
+// const $home = $('.home .list #item') // Selector en jQuery
+
 (async function load(){
   const getData = async (url) =>{
     const response = await fetch(url)
@@ -14,17 +30,4 @@ const url = `http://www.omdbapi.com/`;
 
   console.log(actionList, dramaList, animationList)
 
-  // const $home = $('.home .list #item') // Selector en jQuery
-
-  const $modal = document.getElementById('modal'); 
-  const $overlay = document.getElementById('overlay'); 
-  const $hideModal = document.getElementById('hideModal');
-  const modalImage = $modal.querySelector('img');
-  const modalTitle = $modal.querySelector('h1');
-  const modalDescription = $modal.querySelector('p');
-  
-  const $actionContainer = document.querySelector('#action');
-  const $dramaContainer = document.querySelector('#drama');
-  const $animationContainer = document.querySelector('#animation');
-
-})()
+})(); 
