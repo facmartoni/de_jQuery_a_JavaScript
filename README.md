@@ -1,2 +1,3 @@
-# de_jQuery_a_JavaScript
-Project made in the course "De jQuery a JavaScript" by Platzi.com
+# Platzi Video
+
+Project made in the course "De jQuery a JavaScript" by Platzi.com. I practiced JS and acquired many skills 😎
