@@ -66,8 +66,22 @@ body {
 
 /*myPlaylist*/
 
+.btn{
+  background: white; 
+  border: 1px solid red; 
+  font-size: 1.2rem; 
+  color: #171929;
+  margin-left: 5px; 
+  padding: 0 5px; 
+  cursor: pointer; 
+}
+
 .myPlaylist {
   padding: 0 20px;
+}
+
+.myPlaylist-item{
+  cursor: pointer;
 }
 
 .myPlaylist-item a {
@@ -94,6 +108,7 @@ body {
 
 .playlistFriends-item {
   color: white;
+  cursor: pointer;
 }
 
 .playlistFriends-item {
